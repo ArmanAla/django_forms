@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect
 # Create your views here.
 
 def review(req):
-    if req.methode == "POST":
+    if req.method == "POST":
         entered_username = req.POST["username"]
         print(entered_username)
         return HttpResponseRedirect("/thank_you")
